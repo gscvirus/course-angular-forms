@@ -18,11 +18,11 @@ export class LoginComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    setShowExtraEmail(event: Event) {
+    onShowExtraEmail(event: Event) {
         this.showExtraEmail = (<HTMLInputElement>event.target).checked;
     }
 
-    setShowValues(event: Event) {
+    onShowValues(event: Event) {
         this.showValues = (<HTMLInputElement>event.target).checked;
     }
 
