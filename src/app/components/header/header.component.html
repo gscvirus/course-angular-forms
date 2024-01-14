@@ -1,0 +1,47 @@
+<nav class="relative container mx-auto p-3">
+    <div class="flex items-center justify-between">
+        <!-- Container for logo + menu -->
+        <div class="flex items-center space-x-20">
+            <a routerLink="/">
+                <img src="../../../assets/images/forms.png" alt="" class="w-8 h-8">
+            </a>
+            <div class="hidden space-x-8 font-bold lg:flex">
+                <a href="" class="text-gray-500 hover:text-violet-500">
+                    Template
+                </a>
+                <a href="" class="text-gray-500 hover:text-violet-500">
+                    Reactive
+                </a>
+                <a href="" class="text-gray-500 hover:text-violet-500">
+                    Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex text-gray-500">
+            <div class="hover:text-violet-500 cursor-pointer"><a routerLink="/login">Login</a></div>
+            <a href="#" class="px-8 py-2 font-bold text-white bg-orange-600 rounded-full hover:opacity-70">
+                Sign up
+            </a>
+        </div>
+
+        <!-- Hamburger menu -->
+        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" (click)="navToggle(btnHamburger, menu)" #btnHamburger>
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-500 left-6 right-6 top-20 z-100" #menu>
+        <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+            <a href="#" class="w-full text-center">Template</a>
+            <a href="#" class="w-full text-center">Reactive</a>
+            <a href="#" class="w-full text-center">Resources</a>
+            <a routerLink="/login" class="w-full pt-6 border-t border-gray-400 text-center">Login</a>
+            <a href="#" class="w-full py-3 text-center rounded-full bg-orange-600">Sign up</a>
+        </div>
+    </div>
+</nav>
