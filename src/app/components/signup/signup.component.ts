@@ -17,6 +17,9 @@ export class SignupComponent {
         this.showValues = (<HTMLInputElement>event.target).checked;
     }
 
+    onClear() {
+    }
+
     onCancel() {
         this.router.navigate(["/home"]);
     }

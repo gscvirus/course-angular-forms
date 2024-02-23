@@ -6,6 +6,7 @@
                     <div class="text-gray-600">
                         <p class="font-medium text-lg">Account Details</p>
                         <p>Please fill out all the fields.</p>
+                        <p class="text-blue-700">Form control and form group example</p>
                     </div>
 
                     <div class="lg:col-span-2">
@@ -35,19 +36,122 @@
                                     <input
                                         type="password"
                                         name="password"
-                                        id="email"
+                                        id="password"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                        placeholder="" />
+                                        placeholder="password" />
                                 </div>
 
                                 <div class="md:col-span-5">
                                     <label for="email">Retype Password</label>
                                     <input
                                         type="password"
-                                        name="password"
-                                        id="email"
+                                        name="rePassword"
+                                        id="rePassword"
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                        placeholder="" />
+                                        placeholder="re type previous password" />
+                                </div>
+
+                                <div class="md:col-span-5">
+                                    <label for="userLevel">User access level</label>
+                                    <select id="userLevel" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50">
+                                      <option selected>Choose a level</option>
+                                      <option value="US">Administrator</option>
+                                      <option value="CA">Manager</option>
+                                      <option value="FR">Dev Ops</option>
+                                      <option value="DE">Developer</option>
+                                    </select>
+                                </div>
+
+                                <div class="md:col-span-5">
+                                    <p class="mb-1">Select your age</p>
+                                    <div class="flex items-center mb-2 ml-4">
+                                        <input
+                                            id="default-radio-1"
+                                            type="radio"
+                                            value="15"
+                                            name="age"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900">15 - 25</label>
+                                    </div>
+                                    <div class="flex items-center mb-2 ml-4">
+                                        <input
+                                            checked
+                                            id="default-radio-2"
+                                            type="radio"
+                                            value="26"
+                                            name="age"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900">26 - 35</label>
+                                    </div>
+                                    <div class="flex items-center mb-2 ml-4">
+                                        <input
+                                            id="default-radio-3"
+                                            type="radio"
+                                            value="36"
+                                            name="age"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900">36 - 45</label>
+                                    </div>
+                                    <div class="flex items-center mb-2 ml-4">
+                                        <input
+                                            id="default-radio-4"
+                                            type="radio"
+                                            value="46"
+                                            name="age"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-radio-4" class="ms-2 text-sm font-medium text-gray-900">46 - 55</label>
+                                    </div>
+                                </div>
+
+                                <div class="border-slate-500 rounded md:col-span-5 mb-6 pr-10">
+                                    <hr>
+                                    <div class="flex justify-between mt-2 px-4">
+                                        <p class="font-medium text-lg">Address</p>
+                                        <img
+                                            src="../../../assets/images/plus.png"
+                                            alt="Add new address"
+                                            class="w-8 cursor-pointer">
+                                    </div>
+                                    <ng-container>
+                                        <ng-container>
+                                            <div class="border-slate-500 rounded md:col-span-5 mb-6 pr-10">
+                                                <div class="md:col-span-5 pl-4 pt-4">
+                                                    <div class="flex justify-between">
+                                                        <label for="street">Street</label>
+                                                        <img
+                                                            src="../../../assets/images/trash.svg"
+                                                            alt="remove address"
+                                                            class="cursor-pointer">
+                                                    </div>
+                                                    <input
+                                                        type="text"
+                                                        name="street"
+                                                        id="street"
+                                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                                        placeholder="street" />
+                                                </div>
+                                                <div class="md:col-span-5 pl-4 pt-4">
+                                                    <label for="city">City</label>
+                                                    <input
+                                                        type="text"
+                                                        name="city"
+                                                        id="city"
+                                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                                        placeholder="city" />
+                                                </div>
+                                                <div class="md:col-span-5 pl-4 pt-4 mb-4">
+                                                    <label for="country">Country</label>
+                                                    <input
+                                                        type="text"
+                                                        name="country"
+                                                        id="country"
+                                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                                        placeholder="country" />
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </ng-container>
+                                    </ng-container>
                                 </div>
 
                                 <div class="md:col-span-5 mt-5">
@@ -64,6 +168,17 @@
 
                                 <div class="md:col-span-5 text-right mt-10">
                                     <div class="flex justify-end">
+                                        <button
+                                            type="button"
+                                            class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2">
+                                            Load data
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="bg-red-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2"
+                                            (click)="onClear()">
+                                            Clear
+                                        </button>
                                         <button
                                             type="button"
                                             class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mr-2"
