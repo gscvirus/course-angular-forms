@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { NgLoginComponent } from './components/ng-login/ng-login.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,12 @@ import { SignupComponent } from './components/signup/signup.component';
     HeaderComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    NgLoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
